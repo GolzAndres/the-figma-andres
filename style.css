@@ -1,0 +1,393 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+/* como colocar el icono en la pagina que lo voy a colocar */
+
+
+header {
+    height: 90px;
+    background-color: #ffc700;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    align-items: center;
+}
+
+a:hover {
+    background-color: black;
+    color: white;
+}
+
+a {
+    transition: all 0.5s ease-in-out;
+}
+
+a{
+    padding: 5px;
+    color: black;
+    border: 2px solid black;
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+
+
+form {
+    padding: 5px 5px;
+    border: 2px;
+    border-radius: 15px;
+    color:black;
+}
+
+
+/* este es para ver el select con stilos */
+select {
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    background-color:#ffc700;
+    border: 2px solid;
+    border-radius: 15px;
+    color: black;
+    padding: 8px 16px;
+    padding-right: 60px;
+    margin-right: 20px;
+    outline: none;
+}
+
+select:focus, select:active {
+    background-color: black;
+    color: white;
+}
+/* hasta aqui termina */
+
+/* como hacer el logo de la lupita para que me salga */
+header nav #logo:hover{
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.315);
+}
+
+header nav #logo{
+    font-weight: bold;
+    font-size: 20px;
+    transition: all 0.5s ease-in-out ;
+    
+}
+/* como acomodarla y ponerla los iconos */
+
+picture {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+picture img{
+    font-size: 100px;
+    transition: all 0.2s ease-in-out;
+}
+
+picture img:hover {
+    background-color: white;
+}
+
+span {
+    margin: 5px;
+    border: none;
+}
+
+
+button {
+    background-color: #ffc700;
+    border: none;
+}
+/* todo lo relasionado con el cuerpo para las imagenes de la ropa */
+.order {
+    background-color: #ffc700;
+    display: flex;
+    overflow-x:scroll;
+    border-bottom: 5px solid black;
+    gap: 30px;
+}
+/* como acomodarlas para que me salga co buen moviento */
+.img1{
+    width: 35pc;
+}
+
+.na{
+    width: 58pc;
+}
+/* sirve para que cuando cooque el scroll se me quite y se mueva con el mouse */
+::-webkit-scrollbar{
+    display: none;
+}
+
+.ne {
+    width: 11pc;
+    position: absolute;
+    margin-top: -5pc;
+    margin-left: 1130px;
+}
+
+.section2 {
+    padding: 200px 70px;
+    
+}
+
+.section2 h1 {
+    font-family: 'whyte Inktrap' ;
+    font-size: 55px;
+    text-align: center;
+    text-indent: 200px;
+    justify-content: center;
+
+}
+
+.section2 h1:hover  {
+    color:gray;
+    cursor: pointer;    
+}
+
+.CON {
+    color: black;
+    text-decoration: underline;
+}
+
+@font-face {
+    font-family: 'Whyte';
+    font-weight: 700;
+    src: url('//store.figma.com/cdn/shop/t/9/assets/Whyte-Bold.static.otf?v=128905595683774484771678219731'),
+    url('//store.figma.com/cdn/shop/t/9/assets/Whyte-Bold.static.woff?v=30449694129674053801678219731'),
+    url('//store.figma.com/cdn/shop/t/9/assets/Whyte-Bold.static.woff2?v=79984086896217569151678219731');
+}  
+
+@font-face {
+    font-family: 'Whyte Inktrap';
+    font-weight: 700;
+    src: url('//store.figma.com/cdn/shop/t/9/assets/WhyteInktrap-Bold.static.otf?v=14948104138520166731678219731'),
+    url('//store.figma.com/cdn/shop/t/9/assets/WhyteInktrap-Bold.static.woff?v=5655198296627958361678219731'),
+    url('//store.figma.com/cdn/shop/t/9/assets/WhyteInktrap-Bold.static.woff2?v=80625025671305838431678219731');
+}
+/* seguda setsion de los cuadros como realizarlos */
+
+.container {
+    left: 40px;
+    bottom: 20px;
+    position: relative;
+    width: 18pc;
+    height: 25pc;
+    border-radius: 37px;
+}
+
+.container img {
+    cursor: pointer;
+    position:absolute;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 35px;
+    height: 100%;
+}
+
+.camisa {
+    transition: all 0.2s ease-in-out;   
+}
+
+.container:hover .camisa {
+    opacity: 0;
+}
+
+.container:hover {
+    border: 2px solid black;
+}
+
+.container-madre {
+    grid-template-columns: repeat(4,minMax(0,1fr));
+    grid-column-gap: 30px;
+    grid-row-gap: 100px;
+    display: grid;
+    flex-wrap: wrap;    
+
+}
+
+.container-interno{
+    position: absolute;
+    top: 100%;
+    height: 4pc;
+    margin: 20px;
+    font-size: 9px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    
+}
+
+
+.container-interno .spa {
+    color: green;
+}
+
+.container-interno span {
+    flex-wrap: wrap;
+}
+/* si quiero que una de las clases sea mas grande o de otro color tiene que usar nt-child */
+.container:nth-child(7){
+    grid-column: 3 / 5;
+    width: 100%;
+    grid-row: 2 / 4;
+    height: 100%;
+}
+
+.container:nth-child(8){
+    grid-area: 3 / 1/ 5 / 3 ;
+    width: 100%;
+    height: 100%;
+} 
+
+/* parte de la pierna o parte de abajo ya para finalizar */
+footer {
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    margin-top: 30pc;
+    height: 27pc;
+    background-color: orangered;
+    flex-wrap: wrap;
+}
+
+footer h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 60px;
+    right: 48pc;
+    height: 50px;
+    position: absolute;
+}
+
+
+.parte{
+    margin-right: 66px;
+    margin-top: 95px;
+}
+
+.parte-2{
+    margin-top: 95px ;
+    margin-right: -80px;
+}
+
+
+.palabra{
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    margin-top: 60px;
+    position:absolute;
+    right: 22pc;
+}
+.palabra2 {
+    cursor: pointer;
+    position: absolute;
+    right: 24.7pc;
+    margin-top: 90px;
+}
+
+.palabra:hover{
+    text-decoration: underline;
+}
+
+.palabra2:hover{
+    text-decoration: underline;
+}
+
+.pasador {
+    position: absolute;
+    margin-top: 24.5pc;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.tune {
+    cursor: pointer;
+    position: absolute;
+    margin-left: 570px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    margin-top: 250px;
+    font-weight: 400;
+}
+
+.tuni {
+    position: absolute;
+    margin-left: 725px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    margin-top: 250px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.tunu {
+    position: absolute;
+    margin-left: 900px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    margin-top: 250px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.tuno {
+    margin-left: 450px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    margin-top: 250px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.tuni:hover{
+    text-decoration: underline;
+}
+
+.tune:hover{
+    text-decoration: underline;
+}
+
+.tunu:hover{
+    text-decoration: underline;
+}
+
+.tuno:hover{
+    text-decoration: underline;
+}
+
+/* /* 
+@media screen and (max-width:2280px) {
+
+    body{
+        width: 85%;
+    }
+    
+    img{
+        margin: 10px;
+        padding: 5px;
+    }
+} */
+/* 
+@media screen and (max-width:1000px) {
+    
+    form{
+        display: flex;
+    }
+    
+    body{
+        width: 100%;
+    }
+    
+    .num{
+        display: none;
+    }
+
+
+
+} */ 
